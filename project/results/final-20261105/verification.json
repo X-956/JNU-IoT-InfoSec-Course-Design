@@ -1,0 +1,412 @@
+{
+  "checked_runs": 507,
+  "paired_random_seeds": 20,
+  "statistics": {
+    "FourNodeBaseline": {
+      "n": 1,
+      "sent": {
+        "mean": 80,
+        "sd": 0
+      },
+      "received": {
+        "mean": 80,
+        "sd": 0
+      },
+      "pdr": {
+        "mean": 100.0,
+        "sd": 0
+      },
+      "mean_delay_ms": {
+        "mean": 140.0,
+        "sd": 0
+      },
+      "mean_hops": {
+        "mean": 2.0,
+        "sd": 0
+      },
+      "goodput_kbps": {
+        "mean": 21.845333333333333,
+        "sd": 0
+      },
+      "service_completion_pct": {
+        "mean": 100.0,
+        "sd": 0
+      }
+    },
+    "FourNodeFailure": {
+      "n": 1,
+      "sent": {
+        "mean": 69,
+        "sd": 0
+      },
+      "received": {
+        "mean": 54,
+        "sd": 0
+      },
+      "pdr": {
+        "mean": 78.26086956521739,
+        "sd": 0
+      },
+      "pdr_after": {
+        "mean": 54.54545454545455,
+        "sd": 0
+      },
+      "lcc": {
+        "mean": 3.0,
+        "sd": 0
+      },
+      "mean_delay_ms": {
+        "mean": 140.00000000000003,
+        "sd": 0
+      },
+      "mean_hops": {
+        "mean": 2.0,
+        "sd": 0
+      },
+      "goodput_kbps": {
+        "mean": 14.7456,
+        "sd": 0
+      },
+      "service_completion_pct": {
+        "mean": 67.5,
+        "sd": 0
+      }
+    },
+    "IslBaseline": {
+      "n": 1,
+      "sent": {
+        "mean": 1440,
+        "sd": 0
+      },
+      "received": {
+        "mean": 1440,
+        "sd": 0
+      },
+      "pdr": {
+        "mean": 100.0,
+        "sd": 0
+      },
+      "mean_delay_ms": {
+        "mean": 439.99999999999994,
+        "sd": 0
+      },
+      "mean_hops": {
+        "mean": 5.333333333333333,
+        "sd": 0
+      },
+      "goodput_kbps": {
+        "mean": 168.52114285714288,
+        "sd": 0
+      },
+      "service_completion_pct": {
+        "mean": 100.0,
+        "sd": 0
+      }
+    },
+    "IslFailure": {
+      "n": 20,
+      "sent": {
+        "mean": 1314,
+        "sd": 0.0
+      },
+      "received": {
+        "mean": 974,
+        "sd": 0.0
+      },
+      "pdr": {
+        "mean": 74.1248097412481,
+        "sd": 0.0
+      },
+      "pdr_after": {
+        "mean": 10.052910052910052,
+        "sd": 0.0
+      },
+      "lcc": {
+        "mean": 9.0,
+        "sd": 0.0
+      },
+      "mean_delay_ms": {
+        "mean": 443.1211498973306,
+        "sd": 0.0
+      },
+      "mean_hops": {
+        "mean": 5.359342915811088,
+        "sd": 0.0
+      },
+      "goodput_kbps": {
+        "mean": 113.98582857142857,
+        "sd": 0.0
+      },
+      "service_completion_pct": {
+        "mean": 67.63888888888889,
+        "sd": 0.0
+      }
+    },
+    "IslNoRecovery": {
+      "n": 1,
+      "sent": {
+        "mean": 1314,
+        "sd": 0
+      },
+      "received": {
+        "mean": 936,
+        "sd": 0
+      },
+      "pdr": {
+        "mean": 71.23287671232876,
+        "sd": 0
+      },
+      "pdr_after": {
+        "mean": 0.0,
+        "sd": 0
+      },
+      "lcc": {
+        "mean": 9.0,
+        "sd": 0
+      },
+      "mean_delay_ms": {
+        "mean": 440.00000000000006,
+        "sd": 0
+      },
+      "mean_hops": {
+        "mean": 5.333333333333333,
+        "sd": 0
+      },
+      "goodput_kbps": {
+        "mean": 109.53874285714286,
+        "sd": 0
+      },
+      "service_completion_pct": {
+        "mean": 65.0,
+        "sd": 0
+      }
+    },
+    "IslRandomFailure": {
+      "n": 20,
+      "sent": {
+        "mean": 1314,
+        "sd": 0.0
+      },
+      "received": {
+        "mean": 1189.7,
+        "sd": 28.017100041525392
+      },
+      "pdr": {
+        "mean": 90.54033485540334,
+        "sd": 2.1321993943322224
+      },
+      "pdr_after": {
+        "mean": 67.11640211640211,
+        "sd": 7.41193122791677
+      },
+      "lcc": {
+        "mean": 17.85,
+        "sd": 0.4893604849295929
+      },
+      "mean_delay_ms": {
+        "mean": 445.0420018821926,
+        "sd": 9.442764516982987
+      },
+      "mean_hops": {
+        "mean": 5.376662895729161,
+        "sd": 0.08136315217718157
+      },
+      "goodput_kbps": {
+        "mean": 139.22889142857142,
+        "sd": 3.278801193431086
+      },
+      "service_completion_pct": {
+        "mean": 82.61805555555556,
+        "sd": 1.9456319473281527
+      }
+    },
+    "IslRandomNoRecovery": {
+      "n": 20,
+      "sent": {
+        "mean": 1314,
+        "sd": 0.0
+      },
+      "received": {
+        "mean": 986.4,
+        "sd": 36.30919848656594
+      },
+      "pdr": {
+        "mean": 75.06849315068493,
+        "sd": 2.7632571146549436
+      },
+      "pdr_after": {
+        "mean": 13.333333333333334,
+        "sd": 9.605608065229085
+      },
+      "lcc": {
+        "mean": 17.85,
+        "sd": 0.4893604849295929
+      },
+      "mean_delay_ms": {
+        "mean": 439.8769660991076,
+        "sd": 1.5025705821014266
+      },
+      "mean_hops": {
+        "mean": 5.332308050825897,
+        "sd": 0.01252142151751179
+      },
+      "goodput_kbps": {
+        "mean": 115.43698285714285,
+        "sd": 4.24921362859926
+      },
+      "service_completion_pct": {
+        "mean": 68.5,
+        "sd": 2.5214721171226357
+      }
+    },
+    "IslReroute": {
+      "n": 1,
+      "sent": {
+        "mean": 1419,
+        "sd": 0
+      },
+      "received": {
+        "mean": 1386,
+        "sd": 0
+      },
+      "pdr": {
+        "mean": 97.67441860465117,
+        "sd": 0
+      },
+      "pdr_after": {
+        "mean": 93.16770186335404,
+        "sd": 0
+      },
+      "lcc": {
+        "mean": 23.0,
+        "sd": 0
+      },
+      "mean_delay_ms": {
+        "mean": 441.38528138528136,
+        "sd": 0
+      },
+      "mean_hops": {
+        "mean": 5.344877344877345,
+        "sd": 0
+      },
+      "goodput_kbps": {
+        "mean": 162.2016,
+        "sd": 0
+      },
+      "service_completion_pct": {
+        "mean": 96.25,
+        "sd": 0
+      }
+    },
+    "IslRerouteOff": {
+      "n": 1,
+      "sent": {
+        "mean": 1419,
+        "sd": 0
+      },
+      "received": {
+        "mean": 1272,
+        "sd": 0
+      },
+      "pdr": {
+        "mean": 89.64059196617336,
+        "sd": 0
+      },
+      "pdr_after": {
+        "mean": 69.56521739130434,
+        "sd": 0
+      },
+      "lcc": {
+        "mean": 23.0,
+        "sd": 0
+      },
+      "mean_delay_ms": {
+        "mean": 443.3018867924528,
+        "sd": 0
+      },
+      "mean_hops": {
+        "mean": 5.360849056603773,
+        "sd": 0
+      },
+      "goodput_kbps": {
+        "mean": 148.86034285714285,
+        "sd": 0
+      },
+      "service_completion_pct": {
+        "mean": 88.33333333333333,
+        "sd": 0
+      }
+    }
+  },
+  "recovery_evidence": {
+    "src": 11,
+    "dst": 23,
+    "old_path": "11-10-9-8-15-23",
+    "new_path": "11-12-13-14-15-23",
+    "old_delay": 0.4,
+    "new_delay": 0.4,
+    "first_delivery": 42.4,
+    "failure_to_first_delivery_s": 2.3999999999999986,
+    "route_update_s": 42,
+    "affected_surviving_flows": [
+      {
+        "src": 4,
+        "dst": 16,
+        "first_delivery_s": 42.52,
+        "failure_to_delivery_s": 2.520000000000003
+      },
+      {
+        "src": 11,
+        "dst": 23,
+        "first_delivery_s": 42.4,
+        "failure_to_delivery_s": 2.3999999999999986
+      },
+      {
+        "src": 12,
+        "dst": 0,
+        "first_delivery_s": 42.4,
+        "failure_to_delivery_s": 2.3999999999999986
+      },
+      {
+        "src": 13,
+        "dst": 1,
+        "first_delivery_s": 42.4,
+        "failure_to_delivery_s": 2.3999999999999986
+      },
+      {
+        "src": 14,
+        "dst": 2,
+        "first_delivery_s": 42.4,
+        "failure_to_delivery_s": 2.3999999999999986
+      },
+      {
+        "src": 15,
+        "dst": 3,
+        "first_delivery_s": 42.4,
+        "failure_to_delivery_s": 2.3999999999999986
+      }
+    ]
+  },
+  "boundary": {
+    "file": "CohortBoundary-0.sca",
+    "config": "CohortBoundary",
+    "sent": 1420,
+    "received": 1386,
+    "dropped": 34,
+    "pdr": 97.6056338028169,
+    "pdr_after": 93.91304347826087,
+    "after_definition": "generation_cohort",
+    "sent_after": 460.0,
+    "received_after": 432.0,
+    "lcc": 23.0,
+    "components": 1.0,
+    "failed": 1.0,
+    "route_update_delay_s": 2.0,
+    "mean_delay_ms": 441.38528138528136,
+    "mean_hops": 5.344877344877345,
+    "observation_s": 70.0,
+    "goodput_kbps": 162.2016,
+    "planned_packets": 1440.0,
+    "service_completion_pct": 96.25
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "source_config_hash_matches": 12,
+  "legacy_runs_matching": 484,
+  "empty_input_rejected": true,
+  "existing_output_rejected": true,
+  "python_syntax": "passed",
+  "generated_ned_matches": true
+}

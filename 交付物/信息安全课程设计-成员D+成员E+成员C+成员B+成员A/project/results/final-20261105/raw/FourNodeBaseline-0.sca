@@ -1,0 +1,175 @@
+version 3
+run FourNodeBaseline-0-20261105-21:59:01-37176
+attr configname FourNodeBaseline
+attr datetime 20261105-21:59:01
+attr datetimef 20261105-215901
+attr experiment FourNodeBaseline
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network FourNodeNetwork
+attr processid 37176
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config **.controller.traceFile "\"D:/work/isl-final-20261105/results/final/raw/FourNodeBaseline-0.packets.csv\""
+config cmdenv-event-banners false
+config output-scalar-file D:/work/isl-final-20261105/results/final/raw/FourNodeBaseline-0.sca
+config seed-set 0
+config description "4 node ring baseline: send, route, forward, receive"
+config network FourNodeNetwork
+config **.numSats 4
+config **.failureEnabled false
+config network FourNodeNetwork
+config ned-path ../src
+config sim-time-limit 30s
+config seed-set 0
+config cmdenv-express-mode true
+config cmdenv-status-frequency 10s
+config output-scalar-file ../results/FourNodeBaseline-0.sca
+config output-vector-file ../results/FourNodeBaseline-0.vec
+config **.vector-recording false
+config **.scalar-recording true
+config **.sendInterval 1s
+config **.startTime 1s
+config **.stopTime 20s
+config **.destId -1
+
+par FourNodeNetwork.sat[0].isl$o[0].channel typename "\"ned.DelayChannel\""
+par FourNodeNetwork.sat[0].isl$o[0].channel disabled false
+attr mutable ""
+par FourNodeNetwork.sat[0].isl$o[0].channel delay 0.07s
+attr mutable ""
+attr unit s
+par FourNodeNetwork.sat[1].isl$o[0].channel typename "\"ned.DelayChannel\""
+par FourNodeNetwork.sat[1].isl$o[0].channel disabled false
+attr mutable ""
+par FourNodeNetwork.sat[1].isl$o[0].channel delay 0.07s
+attr mutable ""
+attr unit s
+par FourNodeNetwork.sat[1].isl$o[1].channel typename "\"ned.DelayChannel\""
+par FourNodeNetwork.sat[1].isl$o[1].channel disabled false
+attr mutable ""
+par FourNodeNetwork.sat[1].isl$o[1].channel delay 0.07s
+attr mutable ""
+attr unit s
+par FourNodeNetwork.sat[2].isl$o[0].channel typename "\"ned.DelayChannel\""
+par FourNodeNetwork.sat[2].isl$o[0].channel disabled false
+attr mutable ""
+par FourNodeNetwork.sat[2].isl$o[0].channel delay 0.07s
+attr mutable ""
+attr unit s
+par FourNodeNetwork.sat[2].isl$o[1].channel typename "\"ned.DelayChannel\""
+par FourNodeNetwork.sat[2].isl$o[1].channel disabled false
+attr mutable ""
+par FourNodeNetwork.sat[2].isl$o[1].channel delay 0.07s
+attr mutable ""
+attr unit s
+par FourNodeNetwork.sat[3].isl$o[0].channel typename "\"ned.DelayChannel\""
+par FourNodeNetwork.sat[3].isl$o[0].channel disabled false
+attr mutable ""
+par FourNodeNetwork.sat[3].isl$o[0].channel delay 0.07s
+attr mutable ""
+attr unit s
+par FourNodeNetwork.sat[3].isl$o[1].channel typename "\"ned.DelayChannel\""
+par FourNodeNetwork.sat[3].isl$o[1].channel disabled false
+attr mutable ""
+par FourNodeNetwork.sat[3].isl$o[1].channel delay 0.07s
+attr mutable ""
+attr unit s
+par FourNodeNetwork.sat[0].isl$o[1].channel typename "\"ned.DelayChannel\""
+par FourNodeNetwork.sat[0].isl$o[1].channel disabled false
+attr mutable ""
+par FourNodeNetwork.sat[0].isl$o[1].channel delay 0.07s
+attr mutable ""
+attr unit s
+par FourNodeNetwork.sat[0] typename "\"Satellite\""
+par FourNodeNetwork.sat[0] destId -1
+par FourNodeNetwork.sat[0] sendInterval 1s
+attr unit s
+par FourNodeNetwork.sat[0] startTime 1s
+attr unit s
+par FourNodeNetwork.sat[0] stopTime 20s
+attr unit s
+par FourNodeNetwork.sat[0] failed false
+scalar FourNodeNetwork.sat[0] sent 20
+scalar FourNodeNetwork.sat[0] received 20
+scalar FourNodeNetwork.sat[0] dropped 0
+scalar FourNodeNetwork.sat[0] delaySum 2.8
+scalar FourNodeNetwork.sat[0] hopSum 40
+scalar FourNodeNetwork.sat[0] failed 0
+scalar FourNodeNetwork.sat[0] meanDelay 0.13999999999999999
+scalar FourNodeNetwork.sat[0] meanHops 2
+par FourNodeNetwork.sat[1] typename "\"Satellite\""
+par FourNodeNetwork.sat[1] destId -1
+par FourNodeNetwork.sat[1] sendInterval 1s
+attr unit s
+par FourNodeNetwork.sat[1] startTime 1s
+attr unit s
+par FourNodeNetwork.sat[1] stopTime 20s
+attr unit s
+par FourNodeNetwork.sat[1] failed false
+scalar FourNodeNetwork.sat[1] sent 20
+scalar FourNodeNetwork.sat[1] received 20
+scalar FourNodeNetwork.sat[1] dropped 0
+scalar FourNodeNetwork.sat[1] delaySum 2.8
+scalar FourNodeNetwork.sat[1] hopSum 40
+scalar FourNodeNetwork.sat[1] failed 0
+scalar FourNodeNetwork.sat[1] meanDelay 0.13999999999999999
+scalar FourNodeNetwork.sat[1] meanHops 2
+par FourNodeNetwork.sat[2] typename "\"Satellite\""
+par FourNodeNetwork.sat[2] destId -1
+par FourNodeNetwork.sat[2] sendInterval 1s
+attr unit s
+par FourNodeNetwork.sat[2] startTime 1s
+attr unit s
+par FourNodeNetwork.sat[2] stopTime 20s
+attr unit s
+par FourNodeNetwork.sat[2] failed false
+scalar FourNodeNetwork.sat[2] sent 20
+scalar FourNodeNetwork.sat[2] received 20
+scalar FourNodeNetwork.sat[2] dropped 0
+scalar FourNodeNetwork.sat[2] delaySum 2.8
+scalar FourNodeNetwork.sat[2] hopSum 40
+scalar FourNodeNetwork.sat[2] failed 0
+scalar FourNodeNetwork.sat[2] meanDelay 0.13999999999999999
+scalar FourNodeNetwork.sat[2] meanHops 2
+par FourNodeNetwork.sat[3] typename "\"Satellite\""
+par FourNodeNetwork.sat[3] destId -1
+par FourNodeNetwork.sat[3] sendInterval 1s
+attr unit s
+par FourNodeNetwork.sat[3] startTime 1s
+attr unit s
+par FourNodeNetwork.sat[3] stopTime 20s
+attr unit s
+par FourNodeNetwork.sat[3] failed false
+scalar FourNodeNetwork.sat[3] sent 20
+scalar FourNodeNetwork.sat[3] received 20
+scalar FourNodeNetwork.sat[3] dropped 0
+scalar FourNodeNetwork.sat[3] delaySum 2.8
+scalar FourNodeNetwork.sat[3] hopSum 40
+scalar FourNodeNetwork.sat[3] failed 0
+scalar FourNodeNetwork.sat[3] meanDelay 0.13999999999999999
+scalar FourNodeNetwork.sat[3] meanHops 2
+par FourNodeNetwork.controller typename "\"NetworkController\""
+par FourNodeNetwork.controller numSats 4
+par FourNodeNetwork.controller failureEnabled false
+par FourNodeNetwork.controller recoveryEnabled true
+par FourNodeNetwork.controller failureTime 40s
+attr unit s
+par FourNodeNetwork.controller detectionDelay 2s
+attr unit s
+par FourNodeNetwork.controller failureNodes "\"\""
+par FourNodeNetwork.controller failureMode "\"list\""
+par FourNodeNetwork.controller failureK 0
+par FourNodeNetwork.controller traceFile "\"D:/work/isl-final-20261105/results/final/raw/FourNodeBaseline-0.packets.csv\""
+scalar FourNodeNetwork.controller plannedPackets 80
+scalar FourNodeNetwork.controller observationDuration 30
+scalar FourNodeNetwork.controller numSats 4
+scalar FourNodeNetwork.controller failedCount 0
+par FourNodeNetwork typename "\"FourNodeNetwork\""
+

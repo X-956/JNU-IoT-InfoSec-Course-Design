@@ -1,0 +1,2 @@
+﻿file,config,sent,received,dropped,pdr,pdr_after,after_definition,sent_after,received_after,lcc,components,failed,route_update_delay_s,mean_delay_ms,mean_hops,observation_s,goodput_kbps,planned_packets,service_completion_pct
+CohortBoundary-0.sca,CohortBoundary,1420,1386,34,97.6056338028169,93.91304347826087,generation_cohort,460.0,432.0,23.0,1.0,1.0,2.0,441.38528138528136,5.344877344877345,70.0,162.2016,1440.0,96.25

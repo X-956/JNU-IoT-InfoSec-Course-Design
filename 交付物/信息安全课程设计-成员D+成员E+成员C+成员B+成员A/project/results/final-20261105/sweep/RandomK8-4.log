@@ -1,0 +1,26 @@
+OMNeT++ Discrete Event Simulation  (C) 1992-2025 Andras Varga, OpenSim Ltd.
+Version: 6.4.0, build: 260506-2cf25223fe, edition: Academic Public License -- NOT FOR COMMERCIAL USE
+See the license for distribution terms and warranty disclaimer
+
+Setting up Cmdenv...
+
+Loading NED files from D:\work\isl-final-20261105\src:  4
+
+Preparing for running configuration RandomK8, run #0...
+Assigned runID=RandomK8-0-20261105-22:00:28-38124
+Setting up network "IslNetwork"...
+Initializing...
+
+Running simulation...
+** Event #0   t=0   Elapsed: 1.9e-05s (0m 00s)  0% completed  (0% total)
+     Speed:     ev/sec=0   simsec/sec=0   ev/simsec=0
+     Messages:  created: 26   present: 26   in FES: 26   Memory (RSS): 21.1445MiB
+** Event #8009   t=70   Elapsed: 0.024232s (0m 00s)  100% completed  (100% total)
+     Speed:     ev/sec=330623   simsec/sec=2509.08   ev/simsec=131.77
+     Messages:  created: 1298   present: 26   in FES: 0   Memory (RSS): 21.2656MiB
+
+<!> Simulation time limit reached -- at t=70s, event #8009
+
+Calling finish() at end of Run #0...
+
+End.

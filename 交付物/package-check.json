@@ -1,0 +1,20 @@
+{
+  "checked_at": "2026-11-05T23:19:40",
+  "archive": "信息安全课程设计_成员A_待验收.zip",
+  "archive_sha256": "c2bb4f631caaf6bdd0b005524a6eafbc172a42199931940bda22dd3ba4f496ce",
+  "archive_bytes": 8545911,
+  "file_count": 1571,
+  "experiment_counts": {
+    "checks": 1,
+    "raw": 66,
+    "sweep": 440
+  },
+  "total_runs": 507,
+  "report_sha256": "d1b280f1c6b4ff627d4887c3eef38049035c9295c2446d217ebc7afbf567460d",
+  "report_pages_visually_reviewed": 18,
+  "all_archived_files_match_sources": true,
+  "crc_check": "passed",
+  "original_template_unchanged": true,
+  "template_parts_preserved": 12,
+  "status": "五人资料及分工已填，待成员核对反馈和实际完成日期定稿"
+}

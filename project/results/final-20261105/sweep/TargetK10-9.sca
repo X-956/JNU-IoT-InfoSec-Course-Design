@@ -1,0 +1,959 @@
+version 3
+run TargetK10-0-20261105-22:00:47-40352
+attr configname TargetK10
+attr datetime 20261105-22:00:47
+attr datetimef 20261105-220047
+attr experiment TargetK10
+attr inifile batch.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network IslNetwork
+attr processid 40352
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 9
+config **.controller.traceFile "\"D:/work/isl-final-20261105/results/final/sweep/TargetK10-9.packets.csv\""
+config cmdenv-event-banners false
+config output-scalar-file D:/work/isl-final-20261105/results/final/sweep/TargetK10-9.sca
+config seed-set 9
+config description "targeted adaptive betweenness, k=10"
+config **.failureMode "\"list\""
+config **.failureNodes "\"8,12,1,5,19,23,10,14,3,7\""
+config network IslNetwork
+config ned-path ../src
+config sim-time-limit 70s
+config cmdenv-express-mode true
+config cmdenv-status-frequency 10s
+config output-scalar-file ../results/sweep/TargetK10-0.sca
+config **.vector-recording false
+config **.scalar-recording true
+config **.numSats 24
+config **.sendInterval 1s
+config **.startTime 1s
+config **.stopTime 60s
+config **.destId -1
+config **.failureEnabled true
+config **.failureTime 40s
+config **.detectionDelay 2s
+config **.recoveryEnabled true
+
+par IslNetwork.sat[0].isl$o[0].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[0].isl$o[0].channel disabled false
+attr mutable ""
+par IslNetwork.sat[0].isl$o[0].channel delay 0.07s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[1].isl$o[0].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[1].isl$o[0].channel disabled false
+attr mutable ""
+par IslNetwork.sat[1].isl$o[0].channel delay 0.07s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[0].isl$o[1].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[0].isl$o[1].channel disabled false
+attr mutable ""
+par IslNetwork.sat[0].isl$o[1].channel delay 0.07s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[7].isl$o[0].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[7].isl$o[0].channel disabled false
+attr mutable ""
+par IslNetwork.sat[7].isl$o[0].channel delay 0.07s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[0].isl$o[2].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[0].isl$o[2].channel disabled false
+attr mutable ""
+par IslNetwork.sat[0].isl$o[2].channel delay 0.12s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[8].isl$o[0].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[8].isl$o[0].channel disabled false
+attr mutable ""
+par IslNetwork.sat[8].isl$o[0].channel delay 0.12s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[1].isl$o[1].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[1].isl$o[1].channel disabled false
+attr mutable ""
+par IslNetwork.sat[1].isl$o[1].channel delay 0.07s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[2].isl$o[0].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[2].isl$o[0].channel disabled false
+attr mutable ""
+par IslNetwork.sat[2].isl$o[0].channel delay 0.07s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[1].isl$o[2].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[1].isl$o[2].channel disabled false
+attr mutable ""
+par IslNetwork.sat[1].isl$o[2].channel delay 0.12s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[9].isl$o[0].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[9].isl$o[0].channel disabled false
+attr mutable ""
+par IslNetwork.sat[9].isl$o[0].channel delay 0.12s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[2].isl$o[1].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[2].isl$o[1].channel disabled false
+attr mutable ""
+par IslNetwork.sat[2].isl$o[1].channel delay 0.07s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[3].isl$o[0].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[3].isl$o[0].channel disabled false
+attr mutable ""
+par IslNetwork.sat[3].isl$o[0].channel delay 0.07s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[2].isl$o[2].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[2].isl$o[2].channel disabled false
+attr mutable ""
+par IslNetwork.sat[2].isl$o[2].channel delay 0.12s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[10].isl$o[0].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[10].isl$o[0].channel disabled false
+attr mutable ""
+par IslNetwork.sat[10].isl$o[0].channel delay 0.12s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[3].isl$o[1].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[3].isl$o[1].channel disabled false
+attr mutable ""
+par IslNetwork.sat[3].isl$o[1].channel delay 0.07s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[4].isl$o[0].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[4].isl$o[0].channel disabled false
+attr mutable ""
+par IslNetwork.sat[4].isl$o[0].channel delay 0.07s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[3].isl$o[2].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[3].isl$o[2].channel disabled false
+attr mutable ""
+par IslNetwork.sat[3].isl$o[2].channel delay 0.12s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[11].isl$o[0].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[11].isl$o[0].channel disabled false
+attr mutable ""
+par IslNetwork.sat[11].isl$o[0].channel delay 0.12s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[4].isl$o[1].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[4].isl$o[1].channel disabled false
+attr mutable ""
+par IslNetwork.sat[4].isl$o[1].channel delay 0.07s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[5].isl$o[0].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[5].isl$o[0].channel disabled false
+attr mutable ""
+par IslNetwork.sat[5].isl$o[0].channel delay 0.07s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[4].isl$o[2].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[4].isl$o[2].channel disabled false
+attr mutable ""
+par IslNetwork.sat[4].isl$o[2].channel delay 0.12s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[12].isl$o[0].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[12].isl$o[0].channel disabled false
+attr mutable ""
+par IslNetwork.sat[12].isl$o[0].channel delay 0.12s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[5].isl$o[1].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[5].isl$o[1].channel disabled false
+attr mutable ""
+par IslNetwork.sat[5].isl$o[1].channel delay 0.07s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[6].isl$o[0].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[6].isl$o[0].channel disabled false
+attr mutable ""
+par IslNetwork.sat[6].isl$o[0].channel delay 0.07s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[5].isl$o[2].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[5].isl$o[2].channel disabled false
+attr mutable ""
+par IslNetwork.sat[5].isl$o[2].channel delay 0.12s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[13].isl$o[0].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[13].isl$o[0].channel disabled false
+attr mutable ""
+par IslNetwork.sat[13].isl$o[0].channel delay 0.12s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[6].isl$o[1].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[6].isl$o[1].channel disabled false
+attr mutable ""
+par IslNetwork.sat[6].isl$o[1].channel delay 0.07s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[7].isl$o[1].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[7].isl$o[1].channel disabled false
+attr mutable ""
+par IslNetwork.sat[7].isl$o[1].channel delay 0.07s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[6].isl$o[2].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[6].isl$o[2].channel disabled false
+attr mutable ""
+par IslNetwork.sat[6].isl$o[2].channel delay 0.12s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[14].isl$o[0].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[14].isl$o[0].channel disabled false
+attr mutable ""
+par IslNetwork.sat[14].isl$o[0].channel delay 0.12s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[7].isl$o[2].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[7].isl$o[2].channel disabled false
+attr mutable ""
+par IslNetwork.sat[7].isl$o[2].channel delay 0.12s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[15].isl$o[0].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[15].isl$o[0].channel disabled false
+attr mutable ""
+par IslNetwork.sat[15].isl$o[0].channel delay 0.12s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[8].isl$o[1].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[8].isl$o[1].channel disabled false
+attr mutable ""
+par IslNetwork.sat[8].isl$o[1].channel delay 0.07s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[9].isl$o[1].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[9].isl$o[1].channel disabled false
+attr mutable ""
+par IslNetwork.sat[9].isl$o[1].channel delay 0.07s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[8].isl$o[2].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[8].isl$o[2].channel disabled false
+attr mutable ""
+par IslNetwork.sat[8].isl$o[2].channel delay 0.07s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[15].isl$o[1].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[15].isl$o[1].channel disabled false
+attr mutable ""
+par IslNetwork.sat[15].isl$o[1].channel delay 0.07s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[8].isl$o[3].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[8].isl$o[3].channel disabled false
+attr mutable ""
+par IslNetwork.sat[8].isl$o[3].channel delay 0.12s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[16].isl$o[0].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[16].isl$o[0].channel disabled false
+attr mutable ""
+par IslNetwork.sat[16].isl$o[0].channel delay 0.12s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[9].isl$o[2].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[9].isl$o[2].channel disabled false
+attr mutable ""
+par IslNetwork.sat[9].isl$o[2].channel delay 0.07s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[10].isl$o[1].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[10].isl$o[1].channel disabled false
+attr mutable ""
+par IslNetwork.sat[10].isl$o[1].channel delay 0.07s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[9].isl$o[3].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[9].isl$o[3].channel disabled false
+attr mutable ""
+par IslNetwork.sat[9].isl$o[3].channel delay 0.12s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[17].isl$o[0].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[17].isl$o[0].channel disabled false
+attr mutable ""
+par IslNetwork.sat[17].isl$o[0].channel delay 0.12s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[10].isl$o[2].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[10].isl$o[2].channel disabled false
+attr mutable ""
+par IslNetwork.sat[10].isl$o[2].channel delay 0.07s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[11].isl$o[1].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[11].isl$o[1].channel disabled false
+attr mutable ""
+par IslNetwork.sat[11].isl$o[1].channel delay 0.07s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[10].isl$o[3].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[10].isl$o[3].channel disabled false
+attr mutable ""
+par IslNetwork.sat[10].isl$o[3].channel delay 0.12s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[18].isl$o[0].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[18].isl$o[0].channel disabled false
+attr mutable ""
+par IslNetwork.sat[18].isl$o[0].channel delay 0.12s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[11].isl$o[2].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[11].isl$o[2].channel disabled false
+attr mutable ""
+par IslNetwork.sat[11].isl$o[2].channel delay 0.07s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[12].isl$o[1].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[12].isl$o[1].channel disabled false
+attr mutable ""
+par IslNetwork.sat[12].isl$o[1].channel delay 0.07s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[11].isl$o[3].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[11].isl$o[3].channel disabled false
+attr mutable ""
+par IslNetwork.sat[11].isl$o[3].channel delay 0.12s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[19].isl$o[0].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[19].isl$o[0].channel disabled false
+attr mutable ""
+par IslNetwork.sat[19].isl$o[0].channel delay 0.12s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[12].isl$o[2].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[12].isl$o[2].channel disabled false
+attr mutable ""
+par IslNetwork.sat[12].isl$o[2].channel delay 0.07s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[13].isl$o[1].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[13].isl$o[1].channel disabled false
+attr mutable ""
+par IslNetwork.sat[13].isl$o[1].channel delay 0.07s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[12].isl$o[3].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[12].isl$o[3].channel disabled false
+attr mutable ""
+par IslNetwork.sat[12].isl$o[3].channel delay 0.12s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[20].isl$o[0].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[20].isl$o[0].channel disabled false
+attr mutable ""
+par IslNetwork.sat[20].isl$o[0].channel delay 0.12s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[13].isl$o[2].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[13].isl$o[2].channel disabled false
+attr mutable ""
+par IslNetwork.sat[13].isl$o[2].channel delay 0.07s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[14].isl$o[1].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[14].isl$o[1].channel disabled false
+attr mutable ""
+par IslNetwork.sat[14].isl$o[1].channel delay 0.07s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[13].isl$o[3].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[13].isl$o[3].channel disabled false
+attr mutable ""
+par IslNetwork.sat[13].isl$o[3].channel delay 0.12s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[21].isl$o[0].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[21].isl$o[0].channel disabled false
+attr mutable ""
+par IslNetwork.sat[21].isl$o[0].channel delay 0.12s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[14].isl$o[2].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[14].isl$o[2].channel disabled false
+attr mutable ""
+par IslNetwork.sat[14].isl$o[2].channel delay 0.07s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[15].isl$o[2].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[15].isl$o[2].channel disabled false
+attr mutable ""
+par IslNetwork.sat[15].isl$o[2].channel delay 0.07s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[14].isl$o[3].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[14].isl$o[3].channel disabled false
+attr mutable ""
+par IslNetwork.sat[14].isl$o[3].channel delay 0.12s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[22].isl$o[0].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[22].isl$o[0].channel disabled false
+attr mutable ""
+par IslNetwork.sat[22].isl$o[0].channel delay 0.12s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[15].isl$o[3].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[15].isl$o[3].channel disabled false
+attr mutable ""
+par IslNetwork.sat[15].isl$o[3].channel delay 0.12s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[23].isl$o[0].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[23].isl$o[0].channel disabled false
+attr mutable ""
+par IslNetwork.sat[23].isl$o[0].channel delay 0.12s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[16].isl$o[1].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[16].isl$o[1].channel disabled false
+attr mutable ""
+par IslNetwork.sat[16].isl$o[1].channel delay 0.07s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[17].isl$o[1].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[17].isl$o[1].channel disabled false
+attr mutable ""
+par IslNetwork.sat[17].isl$o[1].channel delay 0.07s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[16].isl$o[2].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[16].isl$o[2].channel disabled false
+attr mutable ""
+par IslNetwork.sat[16].isl$o[2].channel delay 0.07s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[23].isl$o[1].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[23].isl$o[1].channel disabled false
+attr mutable ""
+par IslNetwork.sat[23].isl$o[1].channel delay 0.07s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[17].isl$o[2].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[17].isl$o[2].channel disabled false
+attr mutable ""
+par IslNetwork.sat[17].isl$o[2].channel delay 0.07s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[18].isl$o[1].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[18].isl$o[1].channel disabled false
+attr mutable ""
+par IslNetwork.sat[18].isl$o[1].channel delay 0.07s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[18].isl$o[2].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[18].isl$o[2].channel disabled false
+attr mutable ""
+par IslNetwork.sat[18].isl$o[2].channel delay 0.07s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[19].isl$o[1].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[19].isl$o[1].channel disabled false
+attr mutable ""
+par IslNetwork.sat[19].isl$o[1].channel delay 0.07s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[19].isl$o[2].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[19].isl$o[2].channel disabled false
+attr mutable ""
+par IslNetwork.sat[19].isl$o[2].channel delay 0.07s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[20].isl$o[1].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[20].isl$o[1].channel disabled false
+attr mutable ""
+par IslNetwork.sat[20].isl$o[1].channel delay 0.07s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[20].isl$o[2].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[20].isl$o[2].channel disabled false
+attr mutable ""
+par IslNetwork.sat[20].isl$o[2].channel delay 0.07s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[21].isl$o[1].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[21].isl$o[1].channel disabled false
+attr mutable ""
+par IslNetwork.sat[21].isl$o[1].channel delay 0.07s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[21].isl$o[2].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[21].isl$o[2].channel disabled false
+attr mutable ""
+par IslNetwork.sat[21].isl$o[2].channel delay 0.07s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[22].isl$o[1].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[22].isl$o[1].channel disabled false
+attr mutable ""
+par IslNetwork.sat[22].isl$o[1].channel delay 0.07s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[22].isl$o[2].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[22].isl$o[2].channel disabled false
+attr mutable ""
+par IslNetwork.sat[22].isl$o[2].channel delay 0.07s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[23].isl$o[2].channel typename "\"ned.DelayChannel\""
+par IslNetwork.sat[23].isl$o[2].channel disabled false
+attr mutable ""
+par IslNetwork.sat[23].isl$o[2].channel delay 0.07s
+attr mutable ""
+attr unit s
+par IslNetwork.sat[0] typename "\"Satellite\""
+par IslNetwork.sat[0] destId -1
+par IslNetwork.sat[0] sendInterval 1s
+attr unit s
+par IslNetwork.sat[0] startTime 1s
+attr unit s
+par IslNetwork.sat[0] stopTime 60s
+attr unit s
+par IslNetwork.sat[0] failed false
+scalar IslNetwork.sat[0] sent 60
+scalar IslNetwork.sat[0] received 39
+scalar IslNetwork.sat[0] dropped 19
+scalar IslNetwork.sat[0] delaySum 15.6
+scalar IslNetwork.sat[0] hopSum 195
+scalar IslNetwork.sat[0] failed 0
+scalar IslNetwork.sat[0] meanDelay 0.39999999999999997
+scalar IslNetwork.sat[0] meanHops 5
+par IslNetwork.sat[1] typename "\"Satellite\""
+par IslNetwork.sat[1] destId -1
+par IslNetwork.sat[1] sendInterval 1s
+attr unit s
+par IslNetwork.sat[1] startTime 1s
+attr unit s
+par IslNetwork.sat[1] stopTime 60s
+attr unit s
+par IslNetwork.sat[1] failed false
+scalar IslNetwork.sat[1] sent 39
+scalar IslNetwork.sat[1] received 39
+scalar IslNetwork.sat[1] dropped 2
+scalar IslNetwork.sat[1] delaySum 15.6
+scalar IslNetwork.sat[1] hopSum 195
+scalar IslNetwork.sat[1] failed 1
+scalar IslNetwork.sat[1] meanDelay 0.39999999999999997
+scalar IslNetwork.sat[1] meanHops 5
+par IslNetwork.sat[2] typename "\"Satellite\""
+par IslNetwork.sat[2] destId -1
+par IslNetwork.sat[2] sendInterval 1s
+attr unit s
+par IslNetwork.sat[2] startTime 1s
+attr unit s
+par IslNetwork.sat[2] stopTime 60s
+attr unit s
+par IslNetwork.sat[2] failed false
+scalar IslNetwork.sat[2] sent 60
+scalar IslNetwork.sat[2] received 39
+scalar IslNetwork.sat[2] dropped 19
+scalar IslNetwork.sat[2] delaySum 15.6
+scalar IslNetwork.sat[2] hopSum 195
+scalar IslNetwork.sat[2] failed 0
+scalar IslNetwork.sat[2] meanDelay 0.39999999999999997
+scalar IslNetwork.sat[2] meanHops 5
+par IslNetwork.sat[3] typename "\"Satellite\""
+par IslNetwork.sat[3] destId -1
+par IslNetwork.sat[3] sendInterval 1s
+attr unit s
+par IslNetwork.sat[3] startTime 1s
+attr unit s
+par IslNetwork.sat[3] stopTime 60s
+attr unit s
+par IslNetwork.sat[3] failed false
+scalar IslNetwork.sat[3] sent 39
+scalar IslNetwork.sat[3] received 39
+scalar IslNetwork.sat[3] dropped 4
+scalar IslNetwork.sat[3] delaySum 15.6
+scalar IslNetwork.sat[3] hopSum 195
+scalar IslNetwork.sat[3] failed 1
+scalar IslNetwork.sat[3] meanDelay 0.39999999999999997
+scalar IslNetwork.sat[3] meanHops 5
+par IslNetwork.sat[4] typename "\"Satellite\""
+par IslNetwork.sat[4] destId -1
+par IslNetwork.sat[4] sendInterval 1s
+attr unit s
+par IslNetwork.sat[4] startTime 1s
+attr unit s
+par IslNetwork.sat[4] stopTime 60s
+attr unit s
+par IslNetwork.sat[4] failed false
+scalar IslNetwork.sat[4] sent 60
+scalar IslNetwork.sat[4] received 39
+scalar IslNetwork.sat[4] dropped 19
+scalar IslNetwork.sat[4] delaySum 20.28
+scalar IslNetwork.sat[4] hopSum 234
+scalar IslNetwork.sat[4] failed 0
+scalar IslNetwork.sat[4] meanDelay 0.52
+scalar IslNetwork.sat[4] meanHops 6
+par IslNetwork.sat[5] typename "\"Satellite\""
+par IslNetwork.sat[5] destId -1
+par IslNetwork.sat[5] sendInterval 1s
+attr unit s
+par IslNetwork.sat[5] startTime 1s
+attr unit s
+par IslNetwork.sat[5] stopTime 60s
+attr unit s
+par IslNetwork.sat[5] failed false
+scalar IslNetwork.sat[5] sent 39
+scalar IslNetwork.sat[5] received 39
+scalar IslNetwork.sat[5] dropped 0
+scalar IslNetwork.sat[5] delaySum 20.28
+scalar IslNetwork.sat[5] hopSum 234
+scalar IslNetwork.sat[5] failed 1
+scalar IslNetwork.sat[5] meanDelay 0.52
+scalar IslNetwork.sat[5] meanHops 6
+par IslNetwork.sat[6] typename "\"Satellite\""
+par IslNetwork.sat[6] destId -1
+par IslNetwork.sat[6] sendInterval 1s
+attr unit s
+par IslNetwork.sat[6] startTime 1s
+attr unit s
+par IslNetwork.sat[6] stopTime 60s
+attr unit s
+par IslNetwork.sat[6] failed false
+scalar IslNetwork.sat[6] sent 60
+scalar IslNetwork.sat[6] received 39
+scalar IslNetwork.sat[6] dropped 19
+scalar IslNetwork.sat[6] delaySum 20.28
+scalar IslNetwork.sat[6] hopSum 234
+scalar IslNetwork.sat[6] failed 0
+scalar IslNetwork.sat[6] meanDelay 0.52
+scalar IslNetwork.sat[6] meanHops 6
+par IslNetwork.sat[7] typename "\"Satellite\""
+par IslNetwork.sat[7] destId -1
+par IslNetwork.sat[7] sendInterval 1s
+attr unit s
+par IslNetwork.sat[7] startTime 1s
+attr unit s
+par IslNetwork.sat[7] stopTime 60s
+attr unit s
+par IslNetwork.sat[7] failed false
+scalar IslNetwork.sat[7] sent 39
+scalar IslNetwork.sat[7] received 39
+scalar IslNetwork.sat[7] dropped 2
+scalar IslNetwork.sat[7] delaySum 20.28
+scalar IslNetwork.sat[7] hopSum 234
+scalar IslNetwork.sat[7] failed 1
+scalar IslNetwork.sat[7] meanDelay 0.52
+scalar IslNetwork.sat[7] meanHops 6
+par IslNetwork.sat[8] typename "\"Satellite\""
+par IslNetwork.sat[8] destId -1
+par IslNetwork.sat[8] sendInterval 1s
+attr unit s
+par IslNetwork.sat[8] startTime 1s
+attr unit s
+par IslNetwork.sat[8] stopTime 60s
+attr unit s
+par IslNetwork.sat[8] failed false
+scalar IslNetwork.sat[8] sent 39
+scalar IslNetwork.sat[8] received 39
+scalar IslNetwork.sat[8] dropped 2
+scalar IslNetwork.sat[8] delaySum 15.6
+scalar IslNetwork.sat[8] hopSum 195
+scalar IslNetwork.sat[8] failed 1
+scalar IslNetwork.sat[8] meanDelay 0.39999999999999997
+scalar IslNetwork.sat[8] meanHops 5
+par IslNetwork.sat[9] typename "\"Satellite\""
+par IslNetwork.sat[9] destId -1
+par IslNetwork.sat[9] sendInterval 1s
+attr unit s
+par IslNetwork.sat[9] startTime 1s
+attr unit s
+par IslNetwork.sat[9] stopTime 60s
+attr unit s
+par IslNetwork.sat[9] failed false
+scalar IslNetwork.sat[9] sent 60
+scalar IslNetwork.sat[9] received 39
+scalar IslNetwork.sat[9] dropped 19
+scalar IslNetwork.sat[9] delaySum 15.6
+scalar IslNetwork.sat[9] hopSum 195
+scalar IslNetwork.sat[9] failed 0
+scalar IslNetwork.sat[9] meanDelay 0.39999999999999997
+scalar IslNetwork.sat[9] meanHops 5
+par IslNetwork.sat[10] typename "\"Satellite\""
+par IslNetwork.sat[10] destId -1
+par IslNetwork.sat[10] sendInterval 1s
+attr unit s
+par IslNetwork.sat[10] startTime 1s
+attr unit s
+par IslNetwork.sat[10] stopTime 60s
+attr unit s
+par IslNetwork.sat[10] failed false
+scalar IslNetwork.sat[10] sent 39
+scalar IslNetwork.sat[10] received 39
+scalar IslNetwork.sat[10] dropped 4
+scalar IslNetwork.sat[10] delaySum 15.6
+scalar IslNetwork.sat[10] hopSum 195
+scalar IslNetwork.sat[10] failed 1
+scalar IslNetwork.sat[10] meanDelay 0.39999999999999997
+scalar IslNetwork.sat[10] meanHops 5
+par IslNetwork.sat[11] typename "\"Satellite\""
+par IslNetwork.sat[11] destId -1
+par IslNetwork.sat[11] sendInterval 1s
+attr unit s
+par IslNetwork.sat[11] startTime 1s
+attr unit s
+par IslNetwork.sat[11] stopTime 60s
+attr unit s
+par IslNetwork.sat[11] failed false
+scalar IslNetwork.sat[11] sent 60
+scalar IslNetwork.sat[11] received 39
+scalar IslNetwork.sat[11] dropped 19
+scalar IslNetwork.sat[11] delaySum 15.6
+scalar IslNetwork.sat[11] hopSum 195
+scalar IslNetwork.sat[11] failed 0
+scalar IslNetwork.sat[11] meanDelay 0.39999999999999997
+scalar IslNetwork.sat[11] meanHops 5
+par IslNetwork.sat[12] typename "\"Satellite\""
+par IslNetwork.sat[12] destId -1
+par IslNetwork.sat[12] sendInterval 1s
+attr unit s
+par IslNetwork.sat[12] startTime 1s
+attr unit s
+par IslNetwork.sat[12] stopTime 60s
+attr unit s
+par IslNetwork.sat[12] failed false
+scalar IslNetwork.sat[12] sent 39
+scalar IslNetwork.sat[12] received 39
+scalar IslNetwork.sat[12] dropped 0
+scalar IslNetwork.sat[12] delaySum 15.6
+scalar IslNetwork.sat[12] hopSum 195
+scalar IslNetwork.sat[12] failed 1
+scalar IslNetwork.sat[12] meanDelay 0.39999999999999997
+scalar IslNetwork.sat[12] meanHops 5
+par IslNetwork.sat[13] typename "\"Satellite\""
+par IslNetwork.sat[13] destId -1
+par IslNetwork.sat[13] sendInterval 1s
+attr unit s
+par IslNetwork.sat[13] startTime 1s
+attr unit s
+par IslNetwork.sat[13] stopTime 60s
+attr unit s
+par IslNetwork.sat[13] failed false
+scalar IslNetwork.sat[13] sent 60
+scalar IslNetwork.sat[13] received 39
+scalar IslNetwork.sat[13] dropped 19
+scalar IslNetwork.sat[13] delaySum 15.6
+scalar IslNetwork.sat[13] hopSum 195
+scalar IslNetwork.sat[13] failed 0
+scalar IslNetwork.sat[13] meanDelay 0.39999999999999997
+scalar IslNetwork.sat[13] meanHops 5
+par IslNetwork.sat[14] typename "\"Satellite\""
+par IslNetwork.sat[14] destId -1
+par IslNetwork.sat[14] sendInterval 1s
+attr unit s
+par IslNetwork.sat[14] startTime 1s
+attr unit s
+par IslNetwork.sat[14] stopTime 60s
+attr unit s
+par IslNetwork.sat[14] failed false
+scalar IslNetwork.sat[14] sent 39
+scalar IslNetwork.sat[14] received 39
+scalar IslNetwork.sat[14] dropped 2
+scalar IslNetwork.sat[14] delaySum 15.6
+scalar IslNetwork.sat[14] hopSum 195
+scalar IslNetwork.sat[14] failed 1
+scalar IslNetwork.sat[14] meanDelay 0.39999999999999997
+scalar IslNetwork.sat[14] meanHops 5
+par IslNetwork.sat[15] typename "\"Satellite\""
+par IslNetwork.sat[15] destId -1
+par IslNetwork.sat[15] sendInterval 1s
+attr unit s
+par IslNetwork.sat[15] startTime 1s
+attr unit s
+par IslNetwork.sat[15] stopTime 60s
+attr unit s
+par IslNetwork.sat[15] failed false
+scalar IslNetwork.sat[15] sent 60
+scalar IslNetwork.sat[15] received 39
+scalar IslNetwork.sat[15] dropped 19
+scalar IslNetwork.sat[15] delaySum 15.6
+scalar IslNetwork.sat[15] hopSum 195
+scalar IslNetwork.sat[15] failed 0
+scalar IslNetwork.sat[15] meanDelay 0.39999999999999997
+scalar IslNetwork.sat[15] meanHops 5
+par IslNetwork.sat[16] typename "\"Satellite\""
+par IslNetwork.sat[16] destId -1
+par IslNetwork.sat[16] sendInterval 1s
+attr unit s
+par IslNetwork.sat[16] startTime 1s
+attr unit s
+par IslNetwork.sat[16] stopTime 60s
+attr unit s
+par IslNetwork.sat[16] failed false
+scalar IslNetwork.sat[16] sent 60
+scalar IslNetwork.sat[16] received 39
+scalar IslNetwork.sat[16] dropped 19
+scalar IslNetwork.sat[16] delaySum 20.28
+scalar IslNetwork.sat[16] hopSum 234
+scalar IslNetwork.sat[16] failed 0
+scalar IslNetwork.sat[16] meanDelay 0.52
+scalar IslNetwork.sat[16] meanHops 6
+par IslNetwork.sat[17] typename "\"Satellite\""
+par IslNetwork.sat[17] destId -1
+par IslNetwork.sat[17] sendInterval 1s
+attr unit s
+par IslNetwork.sat[17] startTime 1s
+attr unit s
+par IslNetwork.sat[17] stopTime 60s
+attr unit s
+par IslNetwork.sat[17] failed false
+scalar IslNetwork.sat[17] sent 60
+scalar IslNetwork.sat[17] received 39
+scalar IslNetwork.sat[17] dropped 19
+scalar IslNetwork.sat[17] delaySum 20.28
+scalar IslNetwork.sat[17] hopSum 234
+scalar IslNetwork.sat[17] failed 0
+scalar IslNetwork.sat[17] meanDelay 0.52
+scalar IslNetwork.sat[17] meanHops 6
+par IslNetwork.sat[18] typename "\"Satellite\""
+par IslNetwork.sat[18] destId -1
+par IslNetwork.sat[18] sendInterval 1s
+attr unit s
+par IslNetwork.sat[18] startTime 1s
+attr unit s
+par IslNetwork.sat[18] stopTime 60s
+attr unit s
+par IslNetwork.sat[18] failed false
+scalar IslNetwork.sat[18] sent 60
+scalar IslNetwork.sat[18] received 39
+scalar IslNetwork.sat[18] dropped 19
+scalar IslNetwork.sat[18] delaySum 20.28
+scalar IslNetwork.sat[18] hopSum 234
+scalar IslNetwork.sat[18] failed 0
+scalar IslNetwork.sat[18] meanDelay 0.52
+scalar IslNetwork.sat[18] meanHops 6
+par IslNetwork.sat[19] typename "\"Satellite\""
+par IslNetwork.sat[19] destId -1
+par IslNetwork.sat[19] sendInterval 1s
+attr unit s
+par IslNetwork.sat[19] startTime 1s
+attr unit s
+par IslNetwork.sat[19] stopTime 60s
+attr unit s
+par IslNetwork.sat[19] failed false
+scalar IslNetwork.sat[19] sent 39
+scalar IslNetwork.sat[19] received 39
+scalar IslNetwork.sat[19] dropped 8
+scalar IslNetwork.sat[19] delaySum 20.28
+scalar IslNetwork.sat[19] hopSum 234
+scalar IslNetwork.sat[19] failed 1
+scalar IslNetwork.sat[19] meanDelay 0.52
+scalar IslNetwork.sat[19] meanHops 6
+par IslNetwork.sat[20] typename "\"Satellite\""
+par IslNetwork.sat[20] destId -1
+par IslNetwork.sat[20] sendInterval 1s
+attr unit s
+par IslNetwork.sat[20] startTime 1s
+attr unit s
+par IslNetwork.sat[20] stopTime 60s
+attr unit s
+par IslNetwork.sat[20] failed false
+scalar IslNetwork.sat[20] sent 60
+scalar IslNetwork.sat[20] received 39
+scalar IslNetwork.sat[20] dropped 19
+scalar IslNetwork.sat[20] delaySum 15.6
+scalar IslNetwork.sat[20] hopSum 195
+scalar IslNetwork.sat[20] failed 0
+scalar IslNetwork.sat[20] meanDelay 0.39999999999999997
+scalar IslNetwork.sat[20] meanHops 5
+par IslNetwork.sat[21] typename "\"Satellite\""
+par IslNetwork.sat[21] destId -1
+par IslNetwork.sat[21] sendInterval 1s
+attr unit s
+par IslNetwork.sat[21] startTime 1s
+attr unit s
+par IslNetwork.sat[21] stopTime 60s
+attr unit s
+par IslNetwork.sat[21] failed false
+scalar IslNetwork.sat[21] sent 60
+scalar IslNetwork.sat[21] received 39
+scalar IslNetwork.sat[21] dropped 19
+scalar IslNetwork.sat[21] delaySum 15.6
+scalar IslNetwork.sat[21] hopSum 195
+scalar IslNetwork.sat[21] failed 0
+scalar IslNetwork.sat[21] meanDelay 0.39999999999999997
+scalar IslNetwork.sat[21] meanHops 5
+par IslNetwork.sat[22] typename "\"Satellite\""
+par IslNetwork.sat[22] destId -1
+par IslNetwork.sat[22] sendInterval 1s
+attr unit s
+par IslNetwork.sat[22] startTime 1s
+attr unit s
+par IslNetwork.sat[22] stopTime 60s
+attr unit s
+par IslNetwork.sat[22] failed false
+scalar IslNetwork.sat[22] sent 60
+scalar IslNetwork.sat[22] received 39
+scalar IslNetwork.sat[22] dropped 19
+scalar IslNetwork.sat[22] delaySum 15.6
+scalar IslNetwork.sat[22] hopSum 195
+scalar IslNetwork.sat[22] failed 0
+scalar IslNetwork.sat[22] meanDelay 0.39999999999999997
+scalar IslNetwork.sat[22] meanHops 5
+par IslNetwork.sat[23] typename "\"Satellite\""
+par IslNetwork.sat[23] destId -1
+par IslNetwork.sat[23] sendInterval 1s
+attr unit s
+par IslNetwork.sat[23] startTime 1s
+attr unit s
+par IslNetwork.sat[23] stopTime 60s
+attr unit s
+par IslNetwork.sat[23] failed false
+scalar IslNetwork.sat[23] sent 39
+scalar IslNetwork.sat[23] received 39
+scalar IslNetwork.sat[23] dropped 4
+scalar IslNetwork.sat[23] delaySum 15.6
+scalar IslNetwork.sat[23] hopSum 195
+scalar IslNetwork.sat[23] failed 1
+scalar IslNetwork.sat[23] meanDelay 0.39999999999999997
+scalar IslNetwork.sat[23] meanHops 5
+par IslNetwork.controller typename "\"NetworkController\""
+par IslNetwork.controller numSats 24
+par IslNetwork.controller failureEnabled true
+par IslNetwork.controller recoveryEnabled true
+par IslNetwork.controller failureTime 40s
+attr unit s
+par IslNetwork.controller detectionDelay 2s
+attr unit s
+par IslNetwork.controller failureNodes "\"8,12,1,5,19,23,10,14,3,7\""
+par IslNetwork.controller failureMode "\"list\""
+par IslNetwork.controller failureK 0
+par IslNetwork.controller traceFile "\"D:/work/isl-final-20261105/results/final/sweep/TargetK10-9.packets.csv\""
+scalar IslNetwork.controller plannedPackets 1440
+scalar IslNetwork.controller observationDuration 70
+scalar IslNetwork.controller numSats 24
+scalar IslNetwork.controller failedCount 10
+scalar IslNetwork.controller lccAfterFailure 4
+scalar IslNetwork.controller componentsAfterFailure 8
+scalar IslNetwork.controller sentBeforeFailure 936
+scalar IslNetwork.controller receivedBeforeFailure 936
+scalar IslNetwork.controller sentAfterFailure 294
+scalar IslNetwork.controller receivedAfterFailureLegacy 0
+scalar IslNetwork.controller sentAfterFailureCohort 294
+scalar IslNetwork.controller receivedAfterFailureCohort 0
+scalar IslNetwork.controller pdrAfterFailure 0
+scalar IslNetwork.controller routeUpdateDelay 2
+par IslNetwork typename "\"IslNetwork\""
+
